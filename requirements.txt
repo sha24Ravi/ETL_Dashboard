@@ -1,0 +1,9 @@
+Streamlit
+pandas
+numpy
+redis
+databricks-sql-connector
+matplotlib
+seaborn
+langchain_experimental
+langchain_openai
