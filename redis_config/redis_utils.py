@@ -1,12 +1,17 @@
 import redis, pickle
 from databricks import sql
 import pandas as pd
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+openai_key = os.getenv("OPENAI_API_KEY")
+databricks_token = os.getenv("DATABRICKS_TOKEN")
 
 class redis_config:
     def __init__(self):
         self.redis_config={'host':'localhost', 'port':6379, 'db':0}
-        self.DataBricks_config={'server_hostname':'', 'http_path':'', 'access_token':''}
+        self.DataBricks_config
         self.key="chur_datase"
         self.ttl=86400
 
